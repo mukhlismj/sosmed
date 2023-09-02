@@ -7,62 +7,60 @@ body {
 
 /* Header */
 .main-header {
-    background-color: #f1f1f1;
+    background-color: #f7f7f7;
     color: #000000;
-    padding: 20px;
+    padding-top: 5px; /* Mengurangi padding atas header */
+    padding-bottom: 5px; /* Mengurangi padding bawah header */
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .profile-section {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile-image {
-    margin: 25px;
+    flex-direction: column; /* Mengubah menjadi layout kolom */
+    align-items: center; /* Membuat konten berada di tengah secara horizontal */
+    justify-content: center; /* Membuat konten berada di tengah secara vertikal */
 }
 
 .profile-image img {
-    width: 100px;
+    margin-top: 15px;
+    width: 80px;
     border-radius: 50%;
-    border: 5px solid #ffffff;
+    border: 3px solid #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-info {
-    text-align: left;
-    align-items: center;
-    margin: 25px;
+    text-align: center; /* Teks diatur ke tengah */
+    margin-top: 1px; /* Jarak antara gambar profil dan teks */
 }
 
+/* Aturan tambahan untuk teks nama */
 .profile-info h1 {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
+    justify-content: center; /* Membuat teks nama berada di tengah secara horizontal */
+    font-size: 16px;
+
     color: #000000;
-    margin-bottom: 1px;
+
 }
 
-.profile-info h1 img {
-    width: 20px;
-    margin-left: 5px;
+.profile-info h1 svg { /* verified */
+fill: #1877F2
 }
+
+
 
 .profile-info p {
-    margin-top: 1px;
-    font-size: 20px;
+    font-size: 14px;
     color: #555;
-    margin-bottom: 1px;
+    margin-top: -10px;
+
 }
 
 .profile-info .bio {
-    margin-top: 1px;
     color: #000000;
     margin-bottom: 10px;
 }
@@ -93,21 +91,21 @@ body {
 }
 
 .social-icons img {
-    width: 250px;
+    width: 150px;
 }
 
 /* Footer */
 .main-footer {
     height: 200px;
-    background-color: #f1f1f1;
+    background-color: #f7f7f7;
     color: #000000;
     text-align: center;
     padding: 10px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .main-footer img {
-    width: 15px;
+    width: 12px;
     align-items: center;
 }
 
